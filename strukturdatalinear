@@ -1,0 +1,47 @@
+# struktur-data-linear
+# array 
+data = [10,20,30,40]
+# akses
+print(data[0])
+# tambah
+data.append(50)
+# hapus
+data.remove(20)
+print(data)
+
+# linked list
+class node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+# membuat node
+n1 = node(10)
+n2 = node(20)
+
+n1.next = n2
+
+print(n1.data)
+print(n1.next.data)
+        
+# stack
+stack = []
+
+# push
+stack.append(10)
+stack.append(20)
+
+# pop
+stack.pop()
+print(stack)
+
+from collections import deque
+queue = deque()
+
+# enqueue
+queue.append(10)
+queue.append(20)
+
+# dequeue
+queue.popleft()
+print(queue)
